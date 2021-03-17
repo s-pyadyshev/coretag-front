@@ -1,0 +1,53 @@
+mixin menu()
+
+    nav.menu(class={ light: typeof lightMenu != "undefined" })
+        button.menu__button.js-burger-menu
+        .menu__wrap
+            ul.menu__list
+                li.menu__item
+                    a(href="/core.html").menu__link FOR YOU
+                li.menu__item.js-has-submenu
+                    a(href="#").menu__link OUR PLATFORMS
+                    ul.menu__sublist
+                        li.menu__subitem
+                            a(href="/necrosis.html").menu__sublink NECROSIS
+                        li.menu__subitem
+                            a(href="/").menu__sublink KINASIS
+                        li.menu__subitem
+                            a(href="/").menu__sublink HBEG-F RECEPTOR
+                li.menu__item
+                    a(href="/pipeline.html").menu__link OUR PIPELINE
+                li.menu__item.js-has-submenu
+                    a(href="#").menu__link INVESTORS
+                    ul.menu__sublist
+                        li.menu__subitem
+                            a(href="/corporate-profile.html").menu__sublink CORPORATE PROFILE
+                        li.menu__subitem
+                            a(href="/").menu__sublink STOCK DATA
+                        li.menu__subitem
+                            a(href="/").menu__sublink SEC FILINGS
+                        li.menu__subitem
+                            a(href="/events.html").menu__sublink EVENTS
+                        li.menu__subitem
+                            a(href="/annual-reports.html").menu__sublink ANNUAL REPORTS
+                        li.menu__subitem
+                            a(href="/presentation.html").menu__sublink PRESENTATIONS
+                        li.menu__subitem
+                            a(href="/press-releases.html").menu__sublink PRESS RELEASES
+                        li.menu__subitem
+                            a(href="/corporate-governance.html").menu__sublink CORP GOVERNANCE
+                        li.menu__subitem
+                            a(href="/faq.html").menu__sublink FAQ’S
+                li.menu__item
+                    a(href="/news.html").menu__link NEWS
+                li.menu__item.js-has-submenu
+                    a(href="#").menu__link ABOUT US
+                    ul.menu__sublist
+                        li.menu__subitem
+                            a(href="/targeting.html").menu__sublink ABOUT US
+                        li.menu__subitem
+                            a(href="/for-you.html").menu__sublink OUR TEAM
+                li.menu__item
+                    a(href="/contact.html").menu__link CONTACT
+
+                a(href="#").button.menu__button-more STAY IN TOUCH

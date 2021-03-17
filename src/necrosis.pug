@@ -1,0 +1,111 @@
+extends pug/base
+
+prepend vars
+  //-
+  - title = 'Our necrosis platform'
+
+append vars
+  //-
+
+block content
+  //-
+  main.main
+    include ./pug/section-intro.pug
+    include ./pug/section.pug
+
+    section.section.section-top
+      .container
+        h1.center OUR NECROSIS PLATFORM
+        .section__box
+          .section__col 
+            p.section__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus non aliquet tellus. Aenean in sollicitudin mauris. Aenean convallis turpis nibh, sit amet rhoncus neque congue sed. Phasellus eu laoreet libero, tincidunt congue justo. Donec aliquet suscipit metus nec facilisis. Phasellus id convallis leo. Nam eu feugiat magna. Curabitur sollicitudin blandit egestas. Nullam fringilla lorem a est imperdiet, in pharetra velit luctus. Praesent pulvinar justo eu neque finibus luctus. Integer id nisl diam. Integer vel lorem euismod, malesuada mauris ut, suscipit mi. 
+
+            p.section__text Nulla sed massa non neque tristique blandit. Curabitur sit amet neque dignissim, malesuada mi auctor, placerat magna. Suspendisse sit amet turpis vel sapien facilisis tristique vitae at ligula. Curabitur posuere erat id convallis volutpat. Maecenas blandit porttitor odio, sit amet fermentum urna mollis id. Nunc vel turpis feugiat, auctor neque a, elementum quam. Phasellus imperdiet, mi nec lobortis consectetur, arcu urna bibendum velit, vehicula porta nunc orci nec urna. Ut arcu sapien, placerat sed augue ac, suscipit viverra sem. Integer tempus aliquet risus, et convallis magna vestibulum ut. 
+          .section__col
+            img(src="../img/3.jpg", alt="OUR NECROSIS PLATFORM").section__image
+    section.section
+      .container
+        .section__box
+          .section__col 
+            .card--dark 
+              .card__inner
+                h4.card__title.center WHAT IS NECROSIS?
+                p.card__text Necrose zijn dode zieke cellen. Necrose komt niet voor in een gezond lichaam. Coretag ontdekte en patenteerde een stof die specifiek aan deze dode cellen bindt. Deze stof zetten we in als tracer en deze tracer vormt de basis voor de ontwikkeling van een aantal baanbrekende geneesmiddelen en diagnostiek. De tracers van Coretag binden aan alle cellen die necrotisch zijn, …….
+                a(href="").button.button--light.button--mt FOR PATIENTS
+          .section__col 
+            p.section__text vestibulum ut. Proin finibus aliquam pulvinar. Aliquam malesuada quam sit amet cursus commodo. Maecenas pretium viverra tempor. Duis maximus, eros sed accumsan interdum, urna nisi pretium lacus, vitae interdum sem nisl id tellus. Mauris lorem turpis, commodo tincidunt egestas tempor, faucibus iaculis velit. Integer fringilla lorem at sodales egestas.
+
+            p.section__text Pellentesque placerat mollis nibh in commodo. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis condimentum hendrerit mauris, sed efficitur nunc bibendum quis. Aenean tincidunt eleifend dictum. In posuere dignissim mollis. Nunc nec vestibulum libero. Ut fringilla purus ut molestie congue. Curabitur vestibulum laoreet dolor vitae accumsan. Donec scelerisque pellentesque ex, eu convallis metus lacinia non. Donec tempus luctus orci, vel hendrerit massa. Fusce et turpis nunc.
+
+            p.section__text Praesent in turpis diam. Maecenas porttitor sem nec tortor volutpat, vel cursus est venenatis. Integer a faucibus lorem. Donec mollis, orci vel maximus consequat, nunc erat accumsan velit, id consectetur felis sapien faucibus turpis. Integer porta pretium velit eget tristique. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce at lectus quis metus finibus pharetra et id purus. 
+
+            p.center
+              a(href="").button OUR PIPELINE
+
+    section.section.section-center
+      .container
+        h2 PARTNERS
+        .section__box
+          .section__col-img
+            a(href="")
+              img(src="../img/NRG.png", alt="NRG")
+          .section__col-img 
+            a(href="")
+              img(src="../img/Oncodesign.png", alt="Oncodesign")
+
+    section.section.section-center.section-bg
+      .container
+        .section__inner.section__decor.section__decor--left.section__decor--top
+          h2 NEWS
+          .section__box
+            +card({
+              date: "19 februari 2021",
+              title: "NOVARTIS NEEMT PER 1 JANUARI CORETAG OVER",
+              text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a arcu aliquam, congue tortor quis, blandit neque. Maecenas condimentum erat non ipsum ornare placerat. Aliquam pretium turpis sit amet purus scelerisque, sed varius mauris dapibus.",
+              link: "/"
+            })
+            +card({
+              date: "7 april 2021",
+              title: "NC-TRACER START FASE III ONDERZOEK",
+              text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a arcu aliquam, congue tortor quis, blandit neque. Maecenas condimentum erat non ipsum ornare placerat. Aliquam pretium turpis sit amet purus scelerisque, sed varius mauris dapibus.",
+              link: "/"
+            })
+            +card({
+              date: "9 juli 2021",
+              title: "CORETAG PER 1 JULI 2021 OP DE NASDAQ",
+              text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a arcu aliquam, congue tortor quis, blandit neque. Maecenas condimentum erat non ipsum ornare placerat. Aliquam pretium turpis sit amet purus scelerisque, sed varius mauris dapibus.",
+              link: "/"
+            })
+          a(href="/").button SEE ALL NEWS
+
+    section.section.section-center
+      .container
+        .section__inner
+          h2 PUBLICATIONS
+          .section__row-box
+            .public
+              a(href="").public__head 
+                h5.public__title Power of&nbsp;Coretag&nbsp;-
+                span.public__name  C. Van Eijc
+              .public__main Science Translational Medicine. 5 (201) (pp 201-11), 2013.  Date of Publication 04 Sep 
+              time.public__date February 4, 2021
+            .public
+              a(href="").public__head 
+                h5.public__title Lorem ipsum dolor sit amet&nbsp;-
+                span.public__name  P. Jansen
+              .public__main Science Translational Medicine. 5 (201) (pp 201-11), 2013.  Date of Publication 04 Se
+              time.public__date February 21, 2021
+            .public
+              a(href="").public__head 
+                h5.public__title Morbi sit met nulla in&nbsp;massa&nbsp;-
+                span.public__name  K. Pietersen
+              .public__main Science Translational Medicine. 5 (201) (pp 201-11), 2013.  Date of Publication 04 Sep 
+              time.public__date March 13, 2021
+            .public
+              a(href="").public__head 
+                h5.public__title Lorem ipsum dolor sit amet&nbsp;-
+                span.public__name  F. De Jonge
+              .public__main Science Translational Medicine. 5 (201) (pp 201-11), 2013.  Date of Publication 04 Sep  
+              time.public__date February 4, 2021
+
+          a(href="/").button ALL PUBLICATIONS

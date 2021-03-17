@@ -1,0 +1,92 @@
+extends pug/base
+
+prepend vars
+  //-
+  - title = 'Events'
+
+append vars
+  //-
+
+block content
+  //-
+  main.main
+    include ./pug/section.pug
+
+    section.section.section-top
+        .container
+            +breadcrumb(["CORPORATE PROFILE"])
+
+    section.section.section-center
+        .container
+
+            .section__row-box.section__inner--short
+                h1 events
+
+            .section__row-box
+                h2 UPCOMING EVENTS
+                .public.public--row
+                    .public__col-7
+                        .public__head 
+                            h5.public__title Virtual Global Healthcare Conference
+                        time.public__date February 4, 2021 at 8:00 AM EST
+                    .public__col-3
+                        button.public__button
+                            +svg('calendar').public__icon
+                            span Add to calendar
+
+            .section__row-box
+                h2 PAST EVENTS
+                .public.public--row
+                    .public__col-7
+                        .public__head 
+                            h5.public__title Virtual Global Healthcare Conference
+                        time.public__date February 4, 2021 at 8:00 AM EST
+                    .public__col-3
+                        button.public__button
+                            +svg('speaker').public__icon
+                            span Click here for the webcast
+                .public.public--row
+                    .public__col-7
+                        .public__head 
+                            h5.public__title Virtual Global Healthcare Conference
+                        time.public__date February 4, 2021 at 8:00 AM EST
+                    .public__col-3
+                        button.public__button
+                            +svg('speaker').public__icon
+                            span Click here for the webcast
+                .public.public--row
+                    .public__col-7
+                        .public__head 
+                            h5.public__title Virtual Global Healthcare Conference
+                        time.public__date February 4, 2021 at 8:00 AM EST
+                    .public__col-3
+                        button.public__button
+                            +svg('speaker').public__icon
+                            span Click here for the webcast
+                .public.public--row
+                    .public__col-7
+                        .public__head 
+                            h5.public__title Virtual Global Healthcare Conference
+                        time.public__date February 4, 2021 at 8:00 AM EST
+                    .public__col-3
+                        button.public__button
+                            +svg('speaker').public__icon
+                            span Click here for the webcast
+                .public.public--row
+                    .public__col-7
+                        .public__head 
+                            h5.public__title Virtual Global Healthcare Conference
+                        time.public__date February 4, 2021 at 8:00 AM EST
+                    .public__col-3
+                        button.public__button
+                            +svg('speaker').public__icon
+                            span Click here for the webcast
+                .public.public--row
+                    .public__col-7
+                        .public__head 
+                            h5.public__title Virtual Global Healthcare Conference
+                        time.public__date February 4, 2021 at 8:00 AM EST
+                    .public__col-3
+                        button.public__button
+                            +svg('speaker').public__icon
+                            span Click here for the webcast

@@ -1,0 +1,49 @@
+extends pug/base
+
+prepend vars
+  //-
+  - title = 'Publications'
+
+append vars
+  //-
+
+block content
+  //-
+  main.main
+    include ./pug/section.pug
+
+    section.section.section-top
+      .container
+        +breadcrumb(["CORPORATE PROFILE"])
+
+    section.section.section-center
+        .container
+            .section__inner
+             h1 PUBLICATIONS
+            .section__row-box
+                .public
+                    a(href="").public__head 
+                        h5.public__title Power of&nbsp;Coretag&nbsp;-
+                        span.public__name  C. Van Eijc
+                    .public__main Science Translational Medicine. 5 (201) (pp 201-11), 2013.  Date of Publication 04 Sep 
+                    time.public__date February 4, 2021
+                .public
+                    a(href="").public__head 
+                        h5.public__title Lorem ipsum dolor sit amet&nbsp;-
+                        span.public__name  P. Jansen
+                    .public__main Science Translational Medicine. 5 (201) (pp 201-11), 2013.  Date of Publication 04 Se
+                    time.public__date February 21, 2021
+                .public
+                    a(href="").public__head 
+                        h5.public__title Morbi sit met nulla in&nbsp;massa&nbsp;-
+                        span.public__name  K. Pietersen
+                    .public__main Science Translational Medicine. 5 (201) (pp 201-11), 2013.  Date of Publication 04 Sep 
+                    time.public__date March 13, 2021
+                .public
+                    a(href="").public__head 
+                        h5.public__title Lorem ipsum dolor sit amet&nbsp;-
+                        span.public__name  F. De Jonge
+                    .public__main Science Translational Medicine. 5 (201) (pp 201-11), 2013.  Date of Publication 04 Sep  
+                    time.public__date February 4, 2021
+
+            a(href="/").button ALL PUBLICATIONS

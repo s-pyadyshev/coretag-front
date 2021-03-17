@@ -1,0 +1,50 @@
+.button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    padding: 8px 16px;
+    min-height: 42px;
+    min-width: 138px;
+    font-family: "Basic Sans SemiBold";
+    font-size: 14px;
+    color: $color-white;
+    text-transform: uppercase;
+    background-color: $color-violent-violet;
+    transition-property: background-color, color;
+    transition-duration: $transition-duration;
+
+    &--mt {
+        margin-top: 30px;
+    }
+
+    .is-device-desktop &:hover,
+    .is-device-tablet &:active,
+    .is-device-mobile &:active {
+        background-color: $color-persian-red;
+        transition-property: background-color, color;
+        transition-duration: $transition-duration;
+    }
+
+    &--light {
+        color: $color-persian-red;
+        background-color: $color-white;
+
+        .is-device-desktop &:hover,
+        .is-device-tablet &:active,
+        .is-device-mobile &:active {
+            color: $color-white;
+            transition-property: background-color, color;
+            transition-duration: $transition-duration;
+        }
+    }
+
+    @include tablet-large {
+        min-height: 54px;
+        font-size: 20px;
+
+        &--mt {
+            margin-top: 54px;
+        }
+    }
+}

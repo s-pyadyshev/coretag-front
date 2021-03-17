@@ -1,0 +1,41 @@
+extends pug/base
+
+prepend vars
+  //-
+  - title = 'ANNUAL REPORTS'
+
+append vars
+  //-
+
+block content
+  //-
+  main.main
+    include ./pug/section.pug
+
+    section.section.section-top
+        .container
+            +breadcrumb(["ANNUAL REPORTS"])
+
+    section.section.section-center
+        .container
+
+            .section__row-box
+                h1 ANNUAL REPORTS
+
+            .section__box
+                .section__col-report
+                    a(href="").report
+                        .report__img-wrapper
+                            img(src="", alt="2020 Annual Report")
+                        .report__name 
+                            +svg("pdf").report__icon
+                            span 2020 Annual Report
+                    
+                .section__col-report
+                    a(href="").report
+                        .report__img-wrapper
+                            img(src="", alt="2020 Annual Report")
+                        .report__name 
+                            +svg("pdf").report__icon
+                            span 2020 Annual Report
+                        

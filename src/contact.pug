@@ -1,0 +1,104 @@
+extends pug/base
+
+prepend vars
+  //-
+  - title = 'Contact'
+
+append vars
+  //-
+
+block content
+  //-
+    
+  main.main
+    
+    include ./pug/section.pug
+
+    section.section.section-top.section-center
+        .container
+            .section__inner.section__inner--short
+                h1 CONTACT
+                p.section__text Unable to find the information you were looking for? For any inquiries please send an email or use the contact form to get in touch. We will answer you as soon as we can.
+
+    section.section.section-center
+        .container
+            .section__box.section__inner
+                form.form--contact(action="" method="post")
+                    .form__inner 
+                        .field 
+                            input.input(type="text" placeholder="Your full name" name="fullname" autofocus) 
+                        .field 
+                            input.input(type="email" placeholder="Your email" name="email") 
+                        .field 
+                            input.input(type="text" placeholder="Country" name="country") 
+                        .field 
+                            input.input(type="text" placeholder="Subject" name="subject") 
+                        .field.field--textarea
+                            textarea.textarea(placeholder="Your Message" name="message")
+                    .form__inner 
+                        .field--checkbox
+                            input.checkbox(type="checkbox" name="agree" id="agree")
+                            label.checkbox-label(for="agree") I agree that my collected data is being submitted and stored
+                    .form__inner 
+                        div captcha
+                    button(type="submit" name="submit").button SUBMIT
+                ul.contact-list
+                    .contact-list__item 
+                        .contact-list__item-name General Inquiries
+                        a(href="mailto:info@coretag.com").link.link--contact info@coretag.com
+                    .contact-list__item 
+                        .contact-list__item-name Partnering Inquiries
+                        a(href="mailto:partner@coretag.com").link.link--contact partner@coretag.com
+                    .contact-list__item 
+                        .contact-list__item-name Investor Inquiries
+                        a(href="mailto:investor@coretag.com").link.link--contact investor@coretag.com
+                    .contact-list__item 
+                        .contact-list__item-name Career Inquiries
+                        a(href="mailto:careers@coretag.com").link.link--contact careers@coretag.com
+                    .contact-list__item 
+                        .contact-list__item-name Media Inquiries
+                        .contact-list__item-desc Olivier Verhaar<br>Vernhout strategic creatives
+                        a(href="mailto:media@coretag.com").link.link--contact media@coretag.com
+
+    section.section
+        .container
+            .contact-card__wrapper 
+                .contact-card 
+                    h5 CORETAG HOLDING AG
+                    address 
+                        span Switzerland Innovation Park
+                        span Basel Area
+                        span Gewebestrasse 24
+                        span 4123 Allschwil
+                        span Switzerland
+                        a(href="tel:41765556382").link.link--contact +41-765-5563-82
+                .contact-card 
+                    h5 CORETAG BOSTON
+                    address 
+                        span 3943  Aspen Court 
+                        span Boston
+                        span MA 02114
+                        span USA
+                        a(href="tel:12025550169").link.link--contact +1-202-555-0169
+                .contact-card 
+                    h5 CORETAG HOLDING INC
+                    address 
+                        span 4510  Maud Street
+                        span Wilmington
+                        span DE 19103
+                        span USA
+                        a(href="tel:13026823478").link.link--contact +1-302-682-3478
+                .contact-card 
+                    h5 CORETAG IP
+                    address 
+                        span Parklaan 15
+                        span Rotterdam
+                        span 3066 PA
+                        span The Netherlands
+                        a(href="tel:311154960814").link.link--contact +31 115 496 0814
+    
+    .section-center
+        .container
+            .section__inner
+                h3 CORETAG HAS OPERATIONS IN SWITZERLAND, THE NETHERLANDS AND THE USA
+        .section__map 

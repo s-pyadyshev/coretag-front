@@ -1,0 +1,41 @@
+extends pug/base
+
+prepend vars
+  //-
+  - title = 'TARGETING FOR QUALITY OF LIFE'
+
+append vars
+  //-
+  - lightMenu = true
+
+block content
+  //-
+  main.main
+    include ./pug/section-intro.pug
+    include ./pug/section.pug
+
+    +section-intro("../img/img3.jpg", "../img/img4-big.jpg", "TARGETING FOR QUALITY OF LIFE")
+
+    +section-text("OUR VISION", "Zorgkosten gaan een toenemend deel uitmaken van met name ontwikkelde economieën. Met de groei van de levensverwachting groeit ook de vergrijzing, overheden staan onder druk om hoogwaardige zorg te bieden binnen een beheersbaar budget.<br>Mede hierdoor verandert de gezondheidsmarkt de komende jaren sterk. Biotechnische oplossingen gaan een grote impuls geven aan de gezondheidszorg. Met name op het gebied van het opsporen, monitoren van kanker. Coretag speelt een vooraanstaande rol in deze ontwikkeling en zal met gerichte oplossingen innovatieve bijdragen leveren.",
+    "/subscribe.html", "STAY IN TOUCH").section-center
+
+    +section-text("OUR MISSION", "Coretag verbetert de kwaliteit van leven van kankerpatienten en hun omgeving door een snelle opsporing van kanker, het verkorten van het ziekbed en gerichte behandelingen, zodat patiënten langer van het leven kunnen genieten.<br>Door het inzetten van de Necrose Tracer diagnosticeren en monitoren we kankercellen en kunnen we ook heel gericht medicijnen op kwaadaardige cellen richten.</p><p class='section__text'>Door onze projectmatige aanpak kunnen we snel en flexibel met partners oplossingen ontwikkelen met als doel toonaangevend te worden in kankerdiagnostiek en -therapie.").section-center.section-bg
+
+    section.section.section-center
+        .container
+            blockquote.blockquote 
+                p.blockquote__text “The way to get started is to quit talking and begin doing.”
+                .blockquote__note 
+                    p.blockquote__strong Walt Disney
+    
+    +section-text("WE ARE A PARTNERING ORGANISATION", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ornare augue ut eros porttitor, a faucibus turpis posuere. Phasellus et orci interdum est sollicitudin volutpat. Integer interdum porta lacus in maximus. Phasellus scelerisque tincidunt massa a semper. Donec at odio mauris. Morbi sit amet tristique metus. Ut non varius est, sit amet interdum arcu. Quisque nisi sapien, commodo ac sem a, maximus tincidunt odio. Fusce egestas ligula nec tincidunt ultricies. Vestibulum sed efficitur magna. Aliquam pellentesque eu massa vel imperdiet.</p><p class='section__text'>Integer id vehicula tellus, ut congue nisi. Quisque lacus libero, imperdiet in libero et, sodales mollis eros. Vestibulum pellentesque molestie diam ac molestie. Vivamus quis feugiat diam, vitae semper felis. Nam pretium lorem rhoncus, fermentum diam eget.").section-center
+
+    section.section
+        .container
+            .section__box
+                .section__col
+                    .section__image 
+                        img(src="../img/7.jpg", alt="WHERE WE COME FROM")
+                .section__col
+                    h2 WHERE WE COME FROM
+                    p.section__text In 2011 ontdekten we dat bepaalde cynanides zich hechten aan necrosecellen. Dat was aanleiding om Coretag te starten. Uit vervolgonderzoek bleek een specifieke stof de ideale eigenschappen te bezitten om een breed spectrum aan ziekten te diagnostiseren en te behandelen. Deze stof is klein, zodat het kan doordringen in de celkern van slecht doorbloede necrose cellen, niet toxisch, in staat om verschillende radioactieve elementen te transporteren en te klaren via de nieren. We zijn overtuigd dat we hiermee een grote bijdrage gaan leveren aan de oncologie.

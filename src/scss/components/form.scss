@@ -1,0 +1,172 @@
+.form {
+
+    &__inner {
+        margin-bottom: 32px;
+    }
+
+    &--subscribe {
+        max-width: 950px;
+        margin: 0 auto;
+    }
+
+    &--contact {
+        max-width: 950px;
+        flex-grow: 1;
+    }
+
+    @include tablet-large {
+
+        &--contact {
+            margin-right: auto;
+        }
+
+        &__inner {
+            margin-bottom: 54px;
+        }
+    }
+}
+
+.input,
+.input::placeholder,
+.textarea,
+.textarea::placeholder,
+.label,
+select {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 300;
+    color: $color-woody-brown;
+
+    @include tablet-large {
+        font-size: 22px;
+        line-height: 36px;
+    }
+}
+
+.label {
+    margin-right: 30px;
+}
+
+.textarea,
+.input {
+    width: 100%;
+    height: 100%;
+    padding: 9px 15px;
+    border: 1px solid $color-woody-brown;
+    color: $color-night-rider;
+    transition-property: box-shadow;
+    transition-duration: $transition-duration;
+
+    &:focus,
+    &:hover,
+    &:active {
+        outline: 0;
+        border-radius: 0;
+        box-shadow: inset 0 0 0 1px $color-midnight-blue;
+        transition-property: box-shadow;
+        transition-duration: $transition-duration;
+    }
+
+    @include tablet-large {
+        padding: 12px 30px;
+    }
+}
+
+.field {
+    height: 42px;
+    margin-bottom: 15px;
+
+    &--select {
+        padding: 9px 15px;
+        border: 1px solid $color-woody-brown;
+        transition-property: box-shadow;
+        transition-duration: $transition-duration;
+    
+        &:focus,
+        &:hover,
+        &:active {
+            outline: 0;
+            border-radius: 0;
+            box-shadow: inset 0 0 0 1px $color-midnight-blue;
+            transition-property: box-shadow;
+            transition-duration: $transition-duration;
+        }
+    }
+
+    &--select,
+    &--checkbox {
+        text-align: left;
+        display: flex;
+    }
+
+    &--checkbox {
+        padding-left: 15px;
+    }
+
+    &--textarea {
+        height: 250px;
+    }
+
+    @include tablet-large {
+        height: 62px;
+        margin-bottom: 30px;
+
+        &--select {
+            padding: 12px 30px;
+        }
+
+        &--checkbox {
+            padding-left: 30px;
+        }
+
+        &--textarea {
+            height: 462px;
+        }
+    }
+}
+
+.select-wrapper {
+    position: relative;
+    padding-left: 20px;
+    
+    select {
+        appearance: none;
+        border: none;
+        outline: none;
+        height: 24px;
+    }
+
+    svg {
+        position: absolute;
+        left: 0px;
+        top: 9px;
+        width: 15px;
+        height: 8px;
+    }
+
+    @include tablet-large {
+        
+        select {
+            height: 36px;
+        }
+
+        svg {
+            top: 15px;
+        }
+    }
+}
+
+.checkbox {
+    width: 21px;
+    height: 21px;
+    vertical-align: bottom;
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+
+.checkbox-label {
+    font-weight: 300;
+    font-style: italic;
+    font-size: 17px;
+    line-height: 21px;
+}

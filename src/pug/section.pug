@@ -1,0 +1,23 @@
+include mixins/card.pug
+
+mixin section-text(title, text, buttonLink, buttonText)
+    section.section(class!=attributes.class)
+        .container
+            .section__inner
+                if title
+                    h2 !{title}
+                p.section__text !{text}
+                if buttonLink
+                    a(href=buttonLink).button !{buttonText}
+
+mixin section-card(data)
+    section.section(class!=attributes.class)
+        .container
+            .section__inner
+                if data.titleArrow
+                    h2.section__title--with-arrow !{data.titleArrow}
+                else 
+                    h2 !{data.title}
+                .section__box
+                    each card in data.cards
+                        +card(card)

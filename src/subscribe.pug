@@ -1,0 +1,48 @@
+extends pug/base
+
+prepend vars
+  //-
+  - title = 'SUBSCRIBE TO OUR NEWSLETTER'
+
+append vars
+  //-
+
+block content
+  //-
+  main.main
+    include ./pug/section.pug
+
+    section.section.section-top.section-center
+      .container
+        h1 SUBSCRIBE TO OUR NEWSLETTER
+
+        form.form--subscribe(action="" method="post")
+          .form__inner 
+            .field 
+              input.input(type="email" placeholder="Your email address" name="email" autofocus) 
+            .field 
+              input.input(type="text" placeholder="First Name" name="first-name") 
+            .field 
+              input.input(type="text" placeholder="Last Name" name="last-name") 
+            label.field.field--select(for="category")
+              label.label(for="category") I am interested in:
+              .select-wrapper
+                select(name="category" id="category") 
+                  option(value="default") Category 
+                  option(value="1") 1
+                  option(value="2") 2
+                  option(value="3") 3
+                  option(value="4") 4
+                  option(value="5") 5 
+                +svg("select")
+          
+          .form__inner 
+            .field--checkbox
+              input.checkbox(type="checkbox" name="agree" id="agree")
+              label.checkbox-label(for="agree") I agree that my collected data is being submitted and stored
+          
+          .form__inner 
+            div captcha
+
+          button(type="submit" name="submit").button SUBMIT
+        

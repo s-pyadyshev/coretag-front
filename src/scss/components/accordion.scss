@@ -1,0 +1,80 @@
+.accordion {
+
+    &__content {
+        display: none;
+
+        &>*:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__item {
+        margin-bottom: 10px;
+        border: 1px solid $color-midnight-blue;
+    }
+
+    &__title {
+        margin: 0;
+        transition: color $transition-duration;
+
+        .is-expand & {
+            color: $color-white;
+        }
+    }
+
+    &__arrow {
+        position: absolute;
+        top: 50%;
+        left: 9px;
+        transform: translateY(-50%);
+        width: 22px;
+        height: 22px;
+        fill: $color-medium-carmine;
+        transition: fill $transition-duration;
+
+        .is-expand & {
+            fill: $color-white;
+        }
+    }
+
+    &__header {
+        position: relative;
+        transition: background-color $transition-duration;
+
+        &.is-expand {
+            background-color: $color-midnight-blue;
+        }
+    }
+
+    &__header,
+    &__content {
+        padding: 10px 10px 10px 40px; 
+    }
+
+    p {
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    @include tablet-large {
+
+        &__item {
+            margin-bottom: 14px;
+        }
+
+        &__header,
+        &__content {
+            padding: 23px 23px 23px 62px; 
+        }
+
+        &__arrow {
+            left: 20px;
+        }
+
+        p {
+            font-size: 22px;
+            line-height: 34px;
+        }
+    }
+}

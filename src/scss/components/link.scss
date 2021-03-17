@@ -1,0 +1,139 @@
+.link {
+    font-family: "Basic Sans SemiBold";
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: $color-persian-red;
+    transition-property: color;
+    transition-duration: $transition-duration;
+
+    .is-device-desktop &:hover,
+    .is-device-tablet &:active,
+    .is-device-mobile &:active {
+        color: $color-midnight-blue;
+    }
+
+    &--dark {
+        color: $color-midnight-blue;
+
+        .is-device-desktop &:hover,
+        .is-device-tablet &:active,
+        .is-device-mobile &:active {
+            color: $color-persian-red;
+        }
+    }
+
+    &--contact {
+        font-family: $global-font-family;
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    @include tablet-large {
+        font-family: "Basic Sans Bold";
+        font-size: 26px;
+        line-height: 36px;
+
+        &--contact {
+            font-family: $global-font-family;
+            font-size: 22px;
+            line-height: 34px;
+        }
+    }
+}
+
+.link-box {
+    text-align: center;
+    margin-bottom: 36px;
+
+    time,
+    span {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    span {
+        font-weight: 300;
+        color: $color-woody-brown;
+    }
+
+    time {
+        font-family: "Open Sans Bold";
+        color: $color-midnight-blue;
+        display: block;
+    }
+
+    &__item {
+        position: relative;
+        margin-bottom: 18px;
+    }
+
+    &__inner {
+        text-align: left;
+        margin-bottom: 24px;
+    }
+
+    &__link {
+        display: inline-block;
+
+        .is-device-desktop &:hover time,
+        .is-device-tablet &:active time,
+        .is-device-mobile &:active time {
+            color: $color-woody-brown;
+        }
+    }
+
+    &__pdf {
+        padding-left: 50px;
+
+        &:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: -3px;
+            width: 34px;
+            height: 34px;
+            background: url("../img/sprites/svg/pdf.svg") center/contain no-repeat;
+        }
+    }
+
+    @include tablet-large {
+        min-width: 45%;
+        display: flex;
+        flex-direction: column;
+
+        .link {
+            margin-top: auto;
+        }
+
+        time,
+        span {
+            font-size: 22px;
+            line-height: 30px;
+        }
+
+        &__pdf {
+            padding-left: 0;
+
+            &:before {
+                top: -8px;
+                width: 54px;
+                height: 54px;
+            }
+        }
+
+        &__item {
+            padding: 0 70px;
+        }
+
+        &__inner>*:only-child {
+            display: block;
+            text-align: center;
+        }
+    }
+
+    @include desktop {
+        min-width: auto;
+        width: calc(100%/3);
+    }
+}

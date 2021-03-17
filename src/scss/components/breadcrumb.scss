@@ -1,0 +1,26 @@
+.breadcrumb {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 29px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: flex-end;
+
+    a {
+        color: $color-woody-brown;
+    }
+
+    li {
+        position: relative;
+
+        &:before {
+            content: '<';
+            display: inline-block;
+            margin-right: 5px;
+        }
+    }
+
+    @include tablet-large {
+        justify-content: flex-start;
+    }
+}

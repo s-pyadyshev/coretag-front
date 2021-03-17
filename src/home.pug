@@ -1,0 +1,75 @@
+extends pug/base
+
+prepend vars
+  //-
+  - title = 'Homepage'
+  
+
+append vars
+  //-
+  - lightMenu = true
+
+block content
+  //-
+  main.main
+    include ./pug/section-intro.pug
+    include ./pug/section.pug
+    include ./pug/mixins/card.pug
+
+    +section-intro("../img/img1.jpg", "../img/img1-big.jpg", "REDEFINING DIAGNOSTICS")
+
+    +section-text(null, 
+      "Mensen willen langer in goede gezondheid van het leven genieten. Genieten van grote en kleine momenten. Van en met familie en vrienden. Ook als je patiënt wordt. Daarom heeft Coretag zich als doel gesteld om de diagnose, monitoring en behandeling van kanker te verbeteren. Zodat mensen langer blijven leven en de behandelduur van kanker korter wordt.<br>Dat doet Coretag door het inzetten van de Necrose Tracer. Coretag ontwikkelt met deze tracer radiopharmaceutical medicijnen waarmee we (in eerste instantie alveesklierkanker en longkanker) te lijf gaan. Met onze diagnostiek ontdekken we vroegtijdig kankers en stellen de effectiviteit  van chemokuren aan het begin van de kuur vast.  Patiënten verkeren minder lang in onzekerheid en Coretag bespaart de maatschappij kosten voor onnodige behandelingen.",
+      "/subscribe.html",
+      "STAY IN TOUCH").section-center
+
+    +section-card({
+      titleArrow: "OUR PRIORITIES",
+      cards: [
+        {
+          title: "Innovative projects",
+          text: "We zetten gerichte projecten op met toonaangevende instituten en partners. Zo blijven we een flexibele organisatie die voorop blijft lopen in de ontwikkelingen en zowel op korte als lange termijn financieel succesvol is. In onze pijplijn kunt u per project de status van de verschillende projecten en onderzoeken volgen.",
+          link: "/nc-scan.html",
+          linkText: "MORE ABOUT OUR PROJECTS"
+        },{
+          title: "Eerder en beter kanker in beeld",
+          text: "Met de inzet van de Necrose Tracer kan kanker sneller worden opgespoord, zodat de kans op genezing groter is. Door in een vroegtijdig stadium de effecten van een behandeling te kunnen meten, kan patiënten leed worden bespaard en kan er eerder voor een ander behandelprogramma worden gekozen.",
+          link: "/",
+          linkText: "MORE ABOUT NECROSE TRACER"
+        },{
+          title: "Urgentie in ontwikkeling",
+          text: "Wij voelen een grote urgentie om de perspectieven van slecht behandelbare kankers te vegroten. Zodat patiënten die de diagnose alvleesklierkanker of longkanker krijgen, behandeld kunnen worden. Met top onderzoekers brengen we de mogelijkheden van onze plaformen in kaart.",
+          link: "/necrosis.html",
+          linkText: "MORE ABOUT OUR PLATFORMS"
+        }
+      ]
+    }).section-bg.section-center
+
+    section.section.section-center
+      .container
+        .section__inner
+          blockquote.blockquote 
+            p.blockquote__text “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a arcu aliquam, congue tortor quis, blandit neque.”
+            .blockquote__note 
+              p.blockquote__strong Casper van Eijck, hoogleraar chirurgie in het Erasmus MC
+              p.blockquote__desc Herkomst quote
+          .section__box
+            +card({
+              date: "19 februari 2021",
+              title: "NOVARTIS NEEMT PER 1 JANUARI CORETAG OVER",
+              text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a arcu aliquam, congue tortor quis, blandit neque. Maecenas condimentum erat non ipsum ornare placerat. Aliquam pretium turpis sit amet purus scelerisque, sed varius mauris dapibus.",
+              link: "/"
+            })
+            +card({
+              date: "7 april 2021",
+              title: "NC-TRACER START FASE III ONDERZOEK",
+              text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a arcu aliquam, congue tortor quis, blandit neque. Maecenas condimentum erat non ipsum ornare placerat. Aliquam pretium turpis sit amet purus scelerisque, sed varius mauris dapibus.",
+              link: "/"
+            })
+            +card({
+              date: "9 juli 2021",
+              title: "CORETAG PER 1 JULI 2021 OP DE NASDAQ",
+              text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a arcu aliquam, congue tortor quis, blandit neque. Maecenas condimentum erat non ipsum ornare placerat. Aliquam pretium turpis sit amet purus scelerisque, sed varius mauris dapibus.",
+              link: "/coretag.html"
+            })
+          a(href="/news.html").button SEE ALL NEWS

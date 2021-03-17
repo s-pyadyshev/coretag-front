@@ -1,0 +1,10 @@
+mixin section-intro(img, img2, title)
+    section.section.section-intro
+        .container.container--wide
+            .section-intro__inner
+                h1.section-intro__title !{title}
+                .section-intro__img-wrapper
+                    picture
+                        source(srcset=img2 media="(min-width: 1024px)")
+                        img.section-intro__img(srcset=img alt=title)
+                    .section-intro__decor

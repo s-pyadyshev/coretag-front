@@ -1,0 +1,39 @@
+extends pug/base
+
+prepend vars
+  //-
+  - title = 'Presentation'
+
+append vars
+  //-
+
+block content
+  //-
+  main.main
+    include ./pug/section.pug
+
+    section.section.section-top
+      .container
+        +breadcrumb(["CORPORATE PROFILE"])
+
+    section.section.section-center
+        .container
+            .section__inner.section__inner--short
+                h1 Presentation
+            .section__row-box
+                .public.public--pdf
+                    a(href="").public__head 
+                        h5.public__title Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    time.public__date February 4, 2021
+                .public.public--pdf
+                    a(href="").public__head 
+                        h5.public__title Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    time.public__date February 4, 2021
+                .public.public--pdf
+                    a(href="").public__head 
+                        h5.public__title Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    time.public__date February 4, 2021
+                .public.public--pdf
+                    a(href="").public__head 
+                        h5.public__title Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    time.public__date February 4, 2021

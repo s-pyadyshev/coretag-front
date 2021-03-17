@@ -1,0 +1,25 @@
+.logo {
+    display: block;
+    width: 188px;
+    z-index: 99;
+    flex-shrink: 0;
+    
+    &__img {
+        object-fit: contain;
+        width: 100%;
+    }
+    
+    .footer & {
+        width: 142px;
+    }
+
+    @include tablet-large {
+        width: 372px;
+        max-width: 21%;
+
+        .footer & {
+            max-width: none;
+            width: 174px;
+        }
+    }
+}

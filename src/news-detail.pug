@@ -1,0 +1,31 @@
+extends pug/base
+
+prepend vars
+  //-
+  - title = 'NOVARTIS NEEMT PER  1 JANUARI CORETAG OVER'
+
+append vars
+  //-
+
+block content
+  //-
+  main.main
+    include ./pug/section.pug
+
+    section.section.section-top
+      .container
+        +breadcrumb(["news"])
+
+    section.section.section-center
+      .container
+        .section__box
+          img.section__image(src="../img/4.jpg", alt="NOVARTIS NEEMT PER  1 JANUARI CORETAG OVER")
+        h1 NOVARTIS NEEMT PER  1 JANUARI CORETAG OVER
+        .section__box
+          p.section__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ornare augue ut eros porttitor, a faucibus turpis posuere. Phasellus et orci interdum est sollicitudin volutpat. Integer interdum porta lacus in maximus. Phasellus scelerisque tincidunt massa a semper. Donec at odio mauris. Morbi sit amet tristique metus. Ut non varius est, sit amet interdum arcu. Quisque nisi sapien, commodo ac sem a, maximus tincidunt odio. Fusce egestas ligula nec tincidunt ultricies. Vestibulum sed efficitur magna. Aliquam pellentesque eu massa vel imperdiet.
+
+          p.section__text Integer id vehicula tellus, ut congue nisi. Quisque lacus libero, imperdiet in libero et, sodales mollis eros. Vestibulum pellentesque molestie diam ac molestie. Vivamus quis feugiat diam, vitae semper felis. Nam pretium lorem rhoncus, fermentum diam eget, iaculis libero. Aenean maximus nibh eu nibh tristique, elementum iaculis enim pharetra. Nunc id consectetur neque. Duis et lobortis odio. Sed nec diam dui. Praesent a tincidunt lorem. Donec imperdiet suscipit nisi, in congue tellus sodales vitae. Suspendisse potenti. Duis pharetra dictum quam a convallis.
+
+          p.section__text Integer nec ipsum molestie, tempor justo a, iaculis nibh. Mauris a neque nec est placerat finibus ut ac risus. Nulla pellentesque nunc non libero dictum, id dictum nunc scelerisque. Sed fermentum hendrerit sodales. Suspendisse mattis pulvinar fermentum. Aenean accumsan quam luctus dolor congue cursus. Morbi consectetur ante vitae laoreet finibus. Morbi dui leo, tincidunt ac pulvinar et, facilisis at nunc. Proin rhoncus bibendum eros et venenatis. Nulla auctor fermentum ante eget tincidunt. Duis quis tortor purus. Nunc gravida nibh nec eros accumsan, eu tristique tortor laoreet.
+
+          a(href="").link.link--dark Hier af en toe link naar pdf of url

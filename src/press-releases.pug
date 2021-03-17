@@ -1,0 +1,69 @@
+extends pug/base
+
+prepend vars
+  //-
+  - title = 'Press releases'
+
+append vars
+  //-
+
+block content
+  //-
+  main.main
+    include ./pug/section.pug
+
+    section.section.section-top
+      .container
+        +breadcrumb(["CORPORATE PROFILE"])
+
+    section.section.section-center
+        .container
+            .section__inner.section__inner--short
+                h1 Press releases
+                form.form(action="") 
+                    .field 
+                        input.input(type="text" placeholder="Filter category")
+            .section__row-box
+                .public
+                    a(href="").public__head 
+                        h5.public__title Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus non aliquet tellus. Aenean in sollicitudin mauris. Aenean convallis turpis nibh.
+                    time.public__date February 4, 2021
+                        +svg("pdf").public__icon
+                .public
+                    a(href="").public__head 
+                        h5.public__title Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus non aliquet tellus. Aenean in sollicitudin mauris. Aenean convallis turpis nibh.
+                    time.public__date February 4, 2021
+                        +svg("pdf").public__icon
+                .public
+                    a(href="").public__head 
+                        h5.public__title Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus non aliquet tellus. Aenean in sollicitudin mauris. Aenean convallis turpis nibh.
+                    time.public__date February 4, 2021
+                        +svg("pdf").public__icon
+                .public
+                    a(href="").public__head 
+                        h5.public__title Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus non aliquet tellus. Aenean in sollicitudin mauris. Aenean convallis turpis nibh.
+                    time.public__date February 4, 2021
+                        +svg("pdf").public__icon
+                .public
+                    a(href="").public__head 
+                        h5.public__title Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus non aliquet tellus. Aenean in sollicitudin mauris. Aenean convallis turpis nibh.
+                    time.public__date February 4, 2021
+                        +svg("pdf").public__icon
+                .public
+                    a(href="").public__head 
+                        h5.public__title Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus non aliquet tellus. Aenean in sollicitudin mauris. Aenean convallis turpis nibh.
+                    time.public__date February 4, 2021
+                        +svg("pdf").public__icon
+                .public
+                    a(href="").public__head 
+                        h5.public__title Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus non aliquet tellus. Aenean in sollicitudin mauris. Aenean convallis turpis nibh.
+                    time.public__date February 4, 2021
+                        +svg("pdf").public__icon
+                .public
+                    a(href="").public__head 
+                        h5.public__title Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus non aliquet tellus. Aenean in sollicitudin mauris. Aenean convallis turpis nibh.
+                    time.public__date February 4, 2021
+                        +svg("pdf").public__icon
+
+            .section__inner.section__inner--short
+                +pagination()

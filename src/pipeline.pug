@@ -1,0 +1,317 @@
+extends pug/base
+
+prepend vars
+  //-
+  - title = 'Our pipeline'
+  
+
+append vars
+  //-
+  - lightMenu = true
+
+block content
+  //-
+  main.main
+    include ./pug/section-intro.pug
+    include ./pug/section.pug
+
+    +section-intro("../img/img3.jpg", "../img/img3-big.jpg", "OUR PIPELINE")
+
+    +section-text(null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus non aliquet tellus. Aenean in sollicitudin mauris. Aenean convallis turpis nibh, sit amet rhoncus neque congue sed. Phasellus eu laoreet libero, tincidunt congue justo. Donec aliquet suscipit metus nec facilisis. Phasellus id convallis leo. Nam eu feugiat magna. Curabitur sollicitudin blandit egestas. Nullam fringilla lorem a est imperdiet, in pharetra velit luctus. Praesent pulvinar justo eu neque finibus luctus.",
+    "/", "STAY IN TOUCH").section-center
+
+    section.section.section-table
+      .container
+        .table
+          h3.table__title NECROSIS PLATFORM
+          .table__inner
+            .table__head
+              .table__row
+                .table__col-7.table__col-xs-hidden
+                  .table__col-2 Product
+                  .table__col-1 Radiolabel
+                  .table__col-2 Indications
+                  .table__col-1 Clinical Trial #
+                  .table__col-1 Partner
+                .table__col-5
+                  .table__col-1.table__bd Pre Clinical
+                  .table__col-3.table__bd  Clinical
+                  .table__col-1 Commercial
+              .table__row
+                .table__col-7.table__col-xs-hidden
+                .table__col-5
+                  .table__col-1.table__bd 
+                  .table__col-1.table__bs Phase I
+                  .table__col-1.table__bs Phase II
+                  .table__col-1.table__bd  Phase III
+                  .table__col-1
+            .table__body
+              .table__row 
+                .table__col-7
+                  .table__col-2 
+                    span.name Actinocore® 
+                    span.desc Lu-177
+                  .table__col-1.table__col-xs-hidden <sup>177</sup>Lu
+                  .table__col-2.table__col-xs-hidden NSCLC (Lungcancer)
+                  .table__col-1.table__col-xs-hidden 123456
+                  .table__col-1 
+                    img(src="../img/NRG.png", alt="NRG")
+                .table__col-5
+                  .table__col-1.table__bd 
+                  .table__col-1.table__bs
+                  .table__col-1.table__bs
+                  .table__col-1.table__bd
+                  .table__col-1 
+                  .table__line-wrap
+                    span.line.red(style="width:64%")
+              .table__row 
+                .table__col-7
+                  .table__col-2 
+                    spam.name Actinocore® 
+                    span.desc Pb-212
+                  .table__col-1.table__col-xs-hidden <sup>212</sup>Pb
+                  .table__col-2.table__col-xs-hidden Metastasized Cancer (TBD)
+                  .table__col-1.table__col-xs-hidden 123456
+                  .table__col-1 
+                    img(src="../img/Oncodesign.png", alt="Oncodesign")
+                .table__col-5
+                  .table__col-1.table__bd
+                  .table__col-1.table__bs
+                  .table__col-1.table__bs
+                  .table__col-1.table__bd
+                  .table__col-1 
+                  .table__line-wrap
+                    span.line.red(style="width:25%")
+              .table__row 
+                .table__col-7
+                  .table__col-2 
+                    span.name Actinocore® 
+                    span.desc Pb-212
+                  .table__col-1.table__col-xs-hidden <sup>212</sup>Pb
+                  .table__col-2.table__col-xs-hidden Glioblastoma
+                  .table__col-1.table__col-xs-hidden 123456
+                  .table__col-1 
+                    img(src="../img/NRG.png", alt="NRG")
+                .table__col-5
+                  .table__col-1.table__bd
+                  .table__col-1.table__bs
+                  .table__col-1.table__bs
+                  .table__col-1.table__bd
+                  .table__col-1 
+                  .table__line-wrap
+                    span.line.red(style="width:25%")
+              .table__row 
+                .table__col-7
+                  .table__col-2
+                    span.name Actinocore® 
+                    span.desc Pb-212
+                  .table__col-1.table__col-xs-hidden <sup>212</sup>Pb
+                  .table__col-2.table__col-xs-hidden SCLC (Lung cancer)
+                  .table__col-1.table__col-xs-hidden 123456
+                  .table__col-1 
+                    img(src="../img/Oncodesign.png", alt="Oncodesign")
+                .table__col-5
+                  .table__col-1.table__bd
+                  .table__col-1.table__bs
+                  .table__col-1.table__bs
+                  .table__col-1.table__bd
+                  .table__col-1 
+                  .table__line-wrap
+                    span.line.red(style="width:25%")
+              .table__row 
+                .table__col-7
+                  .table__col-2
+                    span.name NC-scan® 
+                    span.desc In-111 
+                  .table__col-1.table__col-xs-hidden <sup>111</sup>In
+                  .table__col-2.table__col-xs-hidden Leiomyosarcoma
+                  .table__col-1.table__col-xs-hidden 123456
+                  .table__col-1 
+                    img(src="../img/NRG.png", alt="NRG")
+                .table__col-5
+                  .table__col-1.table__bd
+                  .table__col-1.table__bs
+                  .table__col-1.table__bs
+                  .table__col-1.table__bd
+                  .table__col-1
+                  .table__line-wrap
+                    span.line.red(style="width:25%")
+              .table__row 
+                .table__col-7
+                  .table__col-2
+                    span.name NC-scan® 
+                    span.desc In-111 
+                  .table__col-1.table__col-xs-hidden <sup>111</sup>In
+                  .table__col-2.table__col-xs-hidden Total Body Scan
+                  .table__col-1.table__col-xs-hidden 123456
+                  .table__col-1 
+                    img(src="../img/Oncodesign.png", alt="Oncodesign")
+                .table__col-5
+                  .table__col-1.table__bd
+                  .table__col-1.table__bs
+                  .table__col-1.table__bs
+                  .table__col-1.table__bd
+                  .table__col-1 
+                  .table__line-wrap
+                    span.line.red(style="width:25%")
+                    span.line.blue(style="width:calc(25% - 4px)")
+        
+        .table
+          h3.table__title KINASIS PLATFORM
+          .table__inner
+            .table__head
+              .table__row
+                .table__col-7.table__col-xs-hidden
+                  .table__col-2 Product
+                  .table__col-1 Radiolabel
+                  .table__col-2 Indications
+                  .table__col-1 Clinical Trial #
+                  .table__col-1 Partner
+                .table__col-5
+                  .table__col-1.table__bd Pre Clinical
+                  .table__col-3.table__bd  Clinical
+                  .table__col-1 Commercial
+              .table__row
+                .table__col-7.table__col-xs-hidden
+                .table__col-5
+                  .table__col-1.table__bd 
+                  .table__col-1.table__bs Phase I
+                  .table__col-1.table__bs Phase II
+                  .table__col-1.table__bd  Phase III
+                  .table__col-1
+            .table__body                 
+              .table__row 
+                .table__col-7
+                  .table__col-2
+                    span.name NC-scan® 
+                    span.desc In-111 
+                  .table__col-1.table__col-xs-hidden <sup>111</sup>In
+                  .table__col-2.table__col-xs-hidden Leiomyosarcoma
+                  .table__col-1.table__col-xs-hidden 123456
+                  .table__col-1 
+                    img(src="../img/NRG.png", alt="NRG")
+                .table__col-5
+                  .table__col-1.table__bd
+                  .table__col-1.table__bs
+                  .table__col-1.table__bs
+                  .table__col-1.table__bd
+                  .table__col-1 
+                    span.abbr ODD
+                  .table__line-wrap
+                    span.line.red(style="width:25%")
+              .table__row 
+                .table__col-7
+                  .table__col-2
+                    span.name NC-scan® 
+                    span.desc In-111 
+                  .table__col-1.table__col-xs-hidden <sup>111</sup>In
+                  .table__col-2.table__col-xs-hidden Total Body Scan
+                  .table__col-1.table__col-xs-hidden 123456
+                  .table__col-1 
+                    img(src="../img/Oncodesign.png", alt="Oncodesign")
+                .table__col-5
+                  .table__col-1.table__bd
+                  .table__col-1.table__bs
+                  .table__col-1.table__bs
+                  .table__col-1.table__bd
+                  .table__col-1 
+                    span.abbr FT/QIPD
+                  .table__line-wrap
+                    span.line.red(style="width:25%")
+                    span.line.blue(style="width:calc(25% - 4px)")
+        
+        .table
+          h3.table__title HBEG-F RECEPTOR PLATFORM
+          .table__inner
+            .table__head
+              .table__row
+                .table__col-7.table__col-xs-hidden
+                  .table__col-2 Product
+                  .table__col-1 Radiolabel
+                  .table__col-2 Indications
+                  .table__col-1 Clinical Trial #
+                  .table__col-1 Partner
+                .table__col-5
+                  .table__col-1.table__bd Pre Clinical
+                  .table__col-3.table__bd  Clinical
+                  .table__col-1 Commercial
+              .table__row
+                .table__col-7.table__col-xs-hidden
+                .table__col-5
+                  .table__col-1.table__bd 
+                  .table__col-1.table__bs Phase I
+                  .table__col-1.table__bs Phase II
+                  .table__col-1.table__bd  Phase III
+                  .table__col-1
+            .table__body                 
+              .table__row 
+                .table__col-7
+                  .table__col-2
+                    span.name NC-scan® 
+                    span.desc In-111 
+                  .table__col-1.table__col-xs-hidden <sup>111</sup>In
+                  .table__col-2.table__col-xs-hidden Leiomyosarcoma
+                  .table__col-1.table__col-xs-hidden 123456
+                  .table__col-1 
+                    img(src="../img/NRG.png", alt="NRG")
+                .table__col-5
+                  .table__col-1.table__bd
+                  .table__col-1.table__bs
+                  .table__col-1.table__bs
+                  .table__col-1.table__bd
+                  .table__col-1 
+                  .table__line-wrap
+                    span.line.red(style="width:25%")
+              .table__row 
+                .table__col-7
+                  .table__col-2
+                    span.name NC-scan® 
+                    span.desc In-111 
+                  .table__col-1.table__col-xs-hidden <sup>111</sup>In
+                  .table__col-2.table__col-xs-hidden Total Body Scan
+                  .table__col-1.table__col-xs-hidden 123456
+                  .table__col-1 
+                    img(src="../img/Oncodesign.png", alt="Oncodesign")
+                .table__col-5
+                  .table__col-1.table__bd
+                  .table__col-1.table__bs
+                  .table__col-1.table__bs
+                  .table__col-1.table__bd
+                  .table__col-1
+                  .table__line-wrap
+                    span.line.red(style="width:25%")
+                    span.line.blue(style="width:calc(25% - 4px)")
+        
+        .table 
+          .table__inner
+            .table__footer
+              .table__col-7
+                .table__f-n status:
+                .table__f-l executed / done
+                .table__f-l.table__f-lb In execution / goal
+              .table__col-5
+                .table__f-td
+                  .table__f-td-25
+                    span.abbr ODD
+                  .table__f-td-75 Orphan Drug Designation
+                .table__f-td 
+                  .table__f-td-25
+                    span.abbr FT
+                  .table__f-td-75 Fast Track
+                .table__f-td
+                  .table__f-td-25
+                    span.abbr QIPD
+                  .table__f-td-75 Qualified Infectious Disease Product
+                .table__f-td
+                  .table__f-td-25
+                    span.abbr Oncodesign
+                  .table__f-td-75 Oncodesign
+
+    section.section.section-center
+      .container
+        .section__inner
+          p.section__text Integer id nisl diam. Integer vel lorem euismod, malesuada mauris ut, suscipit mi. Nulla sed massa non neque tristique blandit. Curabitur sit amet neque dignissim, malesuada mi auctor, placerat magna. Suspendisse sit amet turpis vel sapien facilisis tristique vitae at ligula. Curabitur posuere erat id convallis volutpat. Maecenas blandit porttitor odio, sit amet fermentum urna mollis id. Nunc vel turpis feugiat, auctor neque a, elementum quam. Phasellus imperdiet, mi nec lobortis consectetur, arcu urna bibendum velit, vehicula porta nunc orci nec urna.<br>Ut arcu sapien, placerat sed augue ac, suscipit viverra sem. Integer tempus aliquet risus, et convallis magna vestibulum ut. Proin finibus aliquam pulvinar. Aliquam malesuada quam sit amet cursus commodo. Maecenas pretium viverra tempor. Duis maximus, eros sed accumsan interdum, urna nisi pretium lacus, vitae interdum sem nisl id tellus. Mauris lorem turpis, commodo tincidunt egestas tempor, faucibus iaculis velit. Integer fringilla lorem at sodales egestas.
+
+          p.section__text Pellentesque placerat mollis nibh in commodo. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis condimentum hendrerit mauris, sed efficitur nunc bibendum quis. Aenean tincidunt eleifend dictum. In posuere dignissim mollis. Nunc nec vestibulum libero. Ut fringilla purus ut molestie congue. Curabitur vestibulum laoreet dolor vitae accumsan. Donec scelerisque pellentesque ex, eu convallis metus lacinia non. Donec tempus luctus orci, vel hendrerit massa. Fusce et turpis nunc.
+
+          p.section__text Praesent in turpis diam. Maecenas porttitor sem nec tortor volutpat, vel cursus est venenatis. Integer a faucibus lorem. Donec mollis, orci vel maximus consequat, nunc erat accumsan velit, id consectetur felis sapien faucibus turpis. Integer porta pretium velit eget tristique. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce at lectus quis metus finibus pharetra et id purus. Pellentesque cursus nulla ut cursus efficitur.

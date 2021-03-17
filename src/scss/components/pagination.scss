@@ -1,0 +1,35 @@
+.pagination {
+    display: flex;
+    font-family: "Open Sans SemiBold";
+    font-size: 18px;
+    line-height: 24px;
+
+    a {
+        color: $color-midnight-blue;
+        opacity: .38;
+        transition: opacity $transition-duration;
+
+        .is-device-desktop &:hover,
+        .is-device-tablet &:active,
+        .is-device-mobile &:active {
+            opacity: 1;
+        }
+    }
+
+    .is-active {
+        color: $color-woody-brown;
+    }
+
+    .is-hidden {
+        display: none;
+    }
+
+    li {
+        margin-right: 12px;
+    }
+
+    @include tablet-large {
+        font-size: 22px;
+        line-height: 30px;
+    }
+}

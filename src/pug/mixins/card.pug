@@ -1,0 +1,17 @@
+mixin card(data)
+
+    if data.linkText
+        .card
+            .card__inner
+                h4.card__title !{data.title}
+                p.card__text !{data.text}
+                a(href=data.link).button !{data.linkText}
+    
+    else
+        .card.card--border
+            .card__inner
+                time.card__date !{data.date}
+                h4.card__title.card__title--up !{data.title}
+                p.card__text.card__text-box !{data.text}
+                a(href=data.link).link read more
+        

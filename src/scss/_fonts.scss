@@ -1,0 +1,84 @@
+// stylelint-disable no-empty-source
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Light.woff2") format("woff2"),
+    url("../fonts/OpenSans-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Light-Italic.woff2") format("woff2"),
+    url("../fonts/OpenSans-Light-Italic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Regular.woff2") format("woff2"),
+    url("../fonts/OpenSans-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans SemiBold";
+  src: url("../fonts/OpenSans-SemiBold.woff2") format("woff2"),
+    url("../fonts/OpenSans-SemiBold.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans Bold";
+  src: url("../fonts/OpenSans-Bold.woff2") format("woff2"),
+    url("../fonts/OpenSans-Bold.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+// stylelint-disable no-empty-source
+
+@font-face {
+  font-family: "Basic Sans";
+  src: url("../fonts/BasicSans-Light.woff2") format("woff2"),
+    url("../fonts/BasicSans-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Basic Sans";
+  src: url("../fonts/BasicSans-Regular.woff2") format("woff2"),
+    url("../fonts/BasicSans-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Basic Sans SemiBold";
+  src: url("../fonts/BasicSans-SemiBold.woff2") format("woff2"),
+    url("../fonts/BasicSans-SemiBold.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Basic Sans Bold";
+  src: url("../fonts/BasicSans-Bold.woff2") format("woff2"),
+    url("../fonts/BasicSans-Bold.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}

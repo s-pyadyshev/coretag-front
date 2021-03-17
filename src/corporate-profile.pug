@@ -1,0 +1,79 @@
+extends pug/base
+
+prepend vars
+  //-
+  - title = 'Corporate profile'
+
+append vars
+  //-
+  - lightMenu = true
+
+block content
+  //-
+  main.main
+    include ./pug/section-intro.pug
+    include ./pug/section.pug
+
+    +section-intro("../img/img3.jpg", "../img/img5-big.jpg", "CORPORATE PROFILE")
+
+    +section-text(null, "Coretag, Inc. is a clinical-stage biotechnal / radiopharmaceutical company committed to delivering novel products to diagnose and treat cancers. Our scientific platforms are the foundation for groundbreaking innovation that improves global cancer health care. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mauris nibh, ultrices vel diam ut, ullamcorper ultrices eros. Proin sed sapien Leo. Quisque vel est mi. Morbi sit amet nulla in massa commodo scelerisque vitae ut ligula. Quisque vel enim dolor. Pellentesque vestibulum ligula vitae odio dapibus faucibus.  Praesent aliquam, purus vitae tempor egestas, erat nisi venenatis mi, vitae ultricies lectus velit sit amet quam. Sed luctus risus sit amet arcu congue viverra. ",
+    "/subscribe.html", "STAY IN TOUCH").section-center
+
+    section.section.section-center
+      .container
+        blockquote.blockquote 
+          p.blockquote__text “Voor een kans geldt dat op het moment dat hij even voorbijkomt, dat je hem moet zien. Vervolgens moet je hem ook pakken.”
+          .blockquote__note 
+            p.blockquote__strong Marcel Levi, CEO van het University College London Hospitals (UCLH)
+
+    section.section.section-center.section-bg
+      .container
+        h2 NASDAQ: GRTS
+        .section__box
+          .section__col
+            img(src="../img/nasdaq1.jpg", alt="")
+          .section__col
+            img(src="../img/nasdaq2.jpg", alt="")
+        a(href="").button MORE STOCK DATA 
+
+    section.section
+      .container
+        .section__box
+          .link-box
+            h2 EVENTS
+            ul.link-box__inner 
+              span More events are coming soon
+            a(href="/events.html").link more events 
+          .link-box
+            h2 PRESENTATIONS
+            ul.link-box__inner 
+              .link-box__item
+                a(href="").link-box__link.link-box__pdf
+                  span Corporate Presentatie February 2021
+              .link-box__item
+                a(href="").link-box__link.link-box__pdf
+                  span Corporate Presentatie February 2021
+              .link-box__item
+                a(href="").link-box__link.link-box__pdf
+                  span Corporate Presentatie February 2021
+              .link-box__item
+                a(href="").link-box__link.link-box__pdf
+                  span Corporate Presentatie February 2021
+            a(href="/publications.html").link more publications
+          .link-box
+            h2 PRESS RELEASES
+            ul.link-box__inner 
+              .link-box__item
+                a(href="").link-box__link
+                  time February 1, 2021
+                  span Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              .link-box__item
+                a(href="").link-box__link
+                  time January 20, 2021
+                  span Duis mauris nibh, ultrices vel diam ut, ullamcorper ultrices eros. 
+              .link-box__item
+                a(href="").link-box__link
+                  time January 19, 2021
+                  span Morbi sit amet nulla in massa commodo scelerisque vitae ut ligula. Quisque vel enim dolor.
+            a(href="/press.html").link more press releases
+
