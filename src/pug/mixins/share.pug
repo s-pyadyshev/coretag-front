@@ -1,0 +1,7 @@
+mixin share(items)
+
+    +b.share 
+        +e.inner 
+            each item in items 
+                +e('a').link(href=item.link, title=item.name)
+                    +svg(item.name) 

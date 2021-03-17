@@ -12,12 +12,16 @@ footer.footer
                     li 
                         a(href="").footer__link FOLLOW US ON OUR SOCIAL CHANNELS
                 .footer__col-social
-                    a(href="/" target="_blank" rel="noopener noreferrer").footer__social-link
-                        +svg('linkedin')
-                    a(href="/" target="_blank" rel="noopener noreferrer").footer__social-link
-                        +svg('twitter')
-                    a(href="/" target="_blank" rel="noopener noreferrer").footer__social-link
-                        +svg('youtube')
+                    ul.social
+                        li.social__item
+                            a(href="/" target="_blank" rel="noopener noreferrer").social__link
+                                +svg('linkedin')
+                        li.social__item
+                            a(href="/" target="_blank" rel="noopener noreferrer").social__link
+                                +svg('twitter')
+                        li.social__item
+                            a(href="/" target="_blank" rel="noopener noreferrer").social__link
+                                +svg('youtube')
                 ul.footer__col-links
                     li
                         a(href="").footer__link TERMS OF USE

@@ -15,7 +15,7 @@ mixin section-card(data)
         .container
             .section__inner
                 if data.titleArrow
-                    h2.section__title--with-arrow !{data.titleArrow}
+                    h2.section__title.section__title--with-arrow !{data.titleArrow}
                 else 
                     h2 !{data.title}
                 .section__box

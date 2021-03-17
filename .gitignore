@@ -1,7 +1,5 @@
 .idea/
 bower_components/
-build
-!/uikit-develop/build
 node_modules/
 zip/
 .DS_Store

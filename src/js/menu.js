@@ -3,12 +3,12 @@ $(function () {
     let $this = $(this),
       $menuSublist = $this.children(".menu__sublist");
 
-    $this.hover(function () {
+    $this.on("mouseenter mouseleave", function () {
       $this.toggleClass("is-expand");
-      $menuSublist.slideToggle(100);
+      $menuSublist.slideToggle(150);
     });
   });
-  
+
   $(".js-burger-menu").on("click", function () {
     let $burgerButton = $(this),
       $burgerMenu = $burgerButton.next();

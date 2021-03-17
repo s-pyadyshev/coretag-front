@@ -1,26 +1,43 @@
 .breadcrumb {
-    font-weight: 300;
-    font-size: 12px;
-    line-height: 29px;
-    text-transform: uppercase;
-    display: flex;
-    justify-content: flex-end;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 29px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: flex-end;
 
-    a {
-        color: $color-woody-brown;
+  a {
+    border-bottom: 1px solid transparent;
+    transition-property: border-color;
+    transition-duration: $transition-duration;
+    color: $color-woody-brown;
+
+    &:focus,
+    &:hover,
+    &:active {
+      border-bottom: 1px solid $color-woody-brown;
+      transition-property: border-color;
+      transition-duration: $transition-duration;
+      color: $color-woody-brown;
     }
 
-    li {
-        position: relative;
-
-        &:before {
-            content: '<';
-            display: inline-block;
-            margin-right: 5px;
-        }
+    &:visited {
+      color: $color-woody-brown;
     }
+  }
 
-    @include tablet-large {
-        justify-content: flex-start;
+  li {
+    position: relative;
+
+    &:before {
+      content: "<";
+      display: inline-block;
+      margin-right: 5px;
     }
+  }
+
+  @include tablet-large {
+    font-size: 22px;
+    justify-content: flex-start;
+  }
 }

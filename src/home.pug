@@ -16,7 +16,18 @@ block content
     include ./pug/section.pug
     include ./pug/mixins/card.pug
 
-    +section-intro("img/img1.jpg", "img/img1-big.jpg", "REDEFINING DIAGNOSTICS")
+    // +section-intro("img/img1.jpg", "img/img1-big.jpg", "REDEFINING DIAGNOSTICS")
+
+    section.section.section-intro
+      .container.container--wide
+        .section-intro__inner
+          h1.section-intro__title REDEFINING DIAGNOSTICS
+          .section-intro__img-wrapper.section-intro__img-wrapper.hidden-desktop
+            img.section-intro__img(src="img/img1.jpg" alt="REDEFINING DIAGNOSTICS")
+            .section-intro__decor
+          .section-intro__video-wrapper
+            video(src="video/video.mp4" alt="REDEFINING DIAGNOSTICS" muted loop autoplay) 
+            .section-intro__decor
 
     +section-text(null, 
       "Mensen willen langer in goede gezondheid van het leven genieten. Genieten van grote en kleine momenten. Van en met familie en vrienden. Ook als je patiënt wordt. Daarom heeft Coretag zich als doel gesteld om de diagnose, monitoring en behandeling van kanker te verbeteren. Zodat mensen langer blijven leven en de behandelduur van kanker korter wordt.<br>Dat doet Coretag door het inzetten van de Necrose Tracer. Coretag ontwikkelt met deze tracer radiopharmaceutical medicijnen waarmee we (in eerste instantie alveesklierkanker en longkanker) te lijf gaan. Met onze diagnostiek ontdekken we vroegtijdig kankers en stellen de effectiviteit  van chemokuren aan het begin van de kuur vast.  Patiënten verkeren minder lang in onzekerheid en Coretag bespaart de maatschappij kosten voor onnodige behandelingen.",

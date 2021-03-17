@@ -12,5 +12,91 @@ block content
   //-
   main.main
     include ./pug/section-intro.pug
+    include ./pug/section.pug
 
     +section-intro("img/img3.jpg", "img/img6-big.jpg", "Corporate governance")
+
+    section.section
+      .container
+        +breadcrumb(["CORPORATE PROFILE"])
+
+    section.section.section-center
+      .container
+        .section__inner
+          h2 OUR CODE OF CONDUCT
+          p.section__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mauris nibh, ultrices vel diam ut, ullamcorper ultrices eros. Proin sed sapien Leo. Quisque vel est mi. Morbi sit amet nulla in massa commodo scelerisque vitae ut ligula. Quisque vel enim dolor. Pellentesque vestibulum ligula vitae odio dapibus faucibus. Cras rutrum elementum luctus. Nulla blandit fermentum purus in egestas. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris egestas enim nec tellus viverra, eget aliquet sapien faucibus. Sed et tellus nisl. Aliquam mattis sem est. Praesent aliquam, purus vitae tempor egestas, erat nisi venenatis mi, vitae ultricies lectus velit sit amet quam. Sed luctus risus sit amet arcu congue viverra. 
+          a(href="").link.link--dark To view the Coretag Code of Conduct, click here
+
+    +section-text("OUR COMPLIANCE & ETHICS POLICIES", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mauris nibh, ultrices vel diam ut, ullamcorper ultrices eros. Proin sed sapien Leo. Quisque vel est mi. Morbi sit amet nulla in massa commodo scelerisque vitae ut ligula. Quisque vel enim dolor. Pellentesque vestibulum ligula vitae odio dapibus faucibus. Cras rutrum elementum luctus. Nulla blandit fermentum purus in egestas. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris egestas enim nec tellus viverra, eget aliquet sapien faucibus. Sed et tellus nisl. Aliquam mattis sem est. Praesent aliquam, purus vitae tempor egestas, erat nisi venenatis mi, vitae ultricies lectus velit sit amet quam. Sed luctus risus sit amet arcu congue viverra. ").section-center.section-bg
+
+    +section-text("THIRD PARTY COMPLIANCE INFORMATION", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mauris nibh, ultrices vel diam ut, ullamcorper ultrices eros. Proin sed sapien Leo. Quisque vel est mi. Morbi sit amet nulla in massa commodo scelerisque vitae ut ligula. Quisque vel enim dolor. Pellentesque vestibulum ligula vitae odio dapibus faucibus. Cras rutrum elementum luctus. Nulla blandit fermentum purus ").section-center
+
+    section.section
+      .container
+        .section__inner.section__inner--short
+          h2.center COMMITTEE COMPOSITION
+        .table-decor.section__inner--short
+          .table-decor__head
+            .table-decor__row
+              .table-decor__col.table-decor__col--l.table-decor__col--hidden Name
+              .table-decor__col Adult Committee
+              .table-decor__col Remuneration Committee
+              .table-decor__col Nominating and Corporate Governance Committee
+          .table-decor__body
+            .table-decor__row
+              .table-decor__col.table-decor__col--l Professor Amit Nathwani
+              .table-decor__col 
+              .table-decor__col
+              .table-decor__col 
+                +svg("checkmark")
+            .table-decor__row
+              .table-decor__col.table-decor__col--l Martin Andrews
+              .table-decor__col
+                +svg("checkmark")
+              .table-decor__col
+                +svg("checkmark")
+              .table-decor__col
+            .table-decor__row
+              .table-decor__col.table-decor__col--l Chris Hollowood
+              .table-decor__col
+                +svg("checkmark")
+              .table-decor__col
+                +svg("chairman")
+              .table-decor__col
+            .table-decor__row
+              .table-decor__col.table-decor__col--l Julia P Gregory
+              .table-decor__col
+                +svg("chairman")
+              .table-decor__col
+              .table-decor__col
+                +svg("checkmark")
+            .table-decor__row
+              .table-decor__col.table-decor__col--l Jeffrey Chodakewitz
+              .table-decor__col
+              .table-decor__col
+                +svg("checkmark")
+              .table-decor__col
+                +svg("chairman")
+          .table-decor__footer
+              .table-decor__note 
+                +svg("checkmark")
+                span = Member
+              .table-decor__note 
+                +svg("chairman")
+                span = Char
+
+
+
+
+    section.section
+      .container
+        h2.center CORPORATE GOVERNANCE DOCUMENTS
+        .section__box
+          .link-box
+            ul.link-box__inner 
+              .link-box__item
+                a(href="").link-box__link.link-box__pdf
+                  span Code of Business Conduct & Ethics
+              .link-box__item
+                a(href="").link-box__link.link-box__pdf
+                  span Corporate Governance Guidelines

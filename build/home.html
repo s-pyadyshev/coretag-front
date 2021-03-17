@@ -13,7 +13,7 @@
 <link rel="icon" href="/icon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/apple.png">
 <link rel="manifest" href="/site.webmanifest">
-		<link rel="stylesheet" href="css/main.css?v=1615975437872">
+		<link rel="stylesheet" href="css/main.css?v=1616013387830">
 	</head>
 	<body>
 		<div class="page-wrapper">
@@ -63,19 +63,21 @@
 				</div>
 			</header>
 			<main class="main">
-								<section class="section section-intro">
-									<div class="container container--wide">
-										<div class="section-intro__inner">
-											<h1 class="section-intro__title">REDEFINING DIAGNOSTICS</h1>
-											<div class="section-intro__img-wrapper">
-												<picture>
-													<source srcset="img/img1-big.jpg" media="(min-width: 1024px)"><img class="section-intro__img" srcset="img/img1.jpg" alt="REDEFINING DIAGNOSTICS">
-												</picture>
-												<div class="section-intro__decor"></div>
-											</div>
-										</div>
-									</div>
-								</section>
+				<!-- +section-intro("img/img1.jpg", "img/img1-big.jpg", "REDEFINING DIAGNOSTICS")-->
+				<section class="section section-intro">
+					<div class="container container--wide">
+						<div class="section-intro__inner">
+							<h1 class="section-intro__title">REDEFINING DIAGNOSTICS</h1>
+							<div class="section-intro__img-wrapper section-intro__img-wrapper hidden-desktop"><img class="section-intro__img" src="img/img1.jpg" alt="REDEFINING DIAGNOSTICS">
+								<div class="section-intro__decor"></div>
+							</div>
+							<div class="section-intro__video-wrapper">
+								<video src="video/video.mp4" alt="REDEFINING DIAGNOSTICS" muted loop autoplay> </video>
+								<div class="section-intro__decor"></div>
+							</div>
+						</div>
+					</div>
+				</section>
 								<section class="section section-center">
 									<div class="container">
 										<div class="section__inner">
@@ -86,7 +88,7 @@
 								<section class="section section-bg section-center">
 									<div class="container">
 										<div class="section__inner">
-											<h2 class="section__title--with-arrow">OUR PRIORITIES</h2>
+											<h2 class="section__title section__title--with-arrow">OUR PRIORITIES</h2>
 											<div class="section__box">
 																<div class="card">
 																	<div class="card__inner">
@@ -123,23 +125,23 @@
 							<div class="section__box">
 												<div class="card card--border">
 													<div class="card__inner">
-														<time class="card__date">19 februari 2021</time>
+														<div class="card__date">19 februari 2021</div>
 														<h4 class="card__title card__title--up">NOVARTIS NEEMT PER 1 JANUARI CORETAG OVER</h4>
-														<p class="card__text card__text-box">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a arcu aliquam, congue tortor quis, blandit neque. Maecenas condimentum erat non ipsum ornare placerat. Aliquam pretium turpis sit amet purus scelerisque, sed varius mauris dapibus.</p><a class="link" href="/">read more</a>
+														<p class="card__text card__text-box">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a arcu aliquam, congue tortor quis, blandit neque. Maecenas condimentum erat non ipsum ornare placerat. Aliquam pretium turpis sit amet purus scelerisque, sed varius mauris dapibus.</p><a class="link" href="/">Read more</a>
 													</div>
 												</div>
 												<div class="card card--border">
 													<div class="card__inner">
-														<time class="card__date">7 april 2021</time>
+														<div class="card__date">7 april 2021</div>
 														<h4 class="card__title card__title--up">NC-TRACER START FASE III ONDERZOEK</h4>
-														<p class="card__text card__text-box">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a arcu aliquam, congue tortor quis, blandit neque. Maecenas condimentum erat non ipsum ornare placerat. Aliquam pretium turpis sit amet purus scelerisque, sed varius mauris dapibus.</p><a class="link" href="/">read more</a>
+														<p class="card__text card__text-box">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a arcu aliquam, congue tortor quis, blandit neque. Maecenas condimentum erat non ipsum ornare placerat. Aliquam pretium turpis sit amet purus scelerisque, sed varius mauris dapibus.</p><a class="link" href="/">Read more</a>
 													</div>
 												</div>
 												<div class="card card--border">
 													<div class="card__inner">
-														<time class="card__date">9 juli 2021</time>
+														<div class="card__date">9 juli 2021</div>
 														<h4 class="card__title card__title--up">CORETAG PER 1 JULI 2021 OP DE NASDAQ</h4>
-														<p class="card__text card__text-box">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a arcu aliquam, congue tortor quis, blandit neque. Maecenas condimentum erat non ipsum ornare placerat. Aliquam pretium turpis sit amet purus scelerisque, sed varius mauris dapibus.</p><a class="link" href="/coretag.html">read more</a>
+														<p class="card__text card__text-box">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a arcu aliquam, congue tortor quis, blandit neque. Maecenas condimentum erat non ipsum ornare placerat. Aliquam pretium turpis sit amet purus scelerisque, sed varius mauris dapibus.</p><a class="link" href="/coretag.html">Read more</a>
 													</div>
 												</div>
 							</div><a class="button" href="/news.html">SEE ALL NEWS</a>
@@ -158,16 +160,22 @@
 								<li><a class="footer__link" href="/subscribe.html">SUBSCRIBE TO OUR NEWSLETTER</a></li>
 								<li> <a class="footer__link" href="">FOLLOW US ON OUR SOCIAL CHANNELS</a></li>
 							</ul>
-							<div class="footer__col-social"><a class="footer__social-link" href="/" target="_blank" rel="noopener noreferrer">
-									<svg>
-										<use xlink:href="img/sprites.svg#linkedin"></use>
-									</svg></a><a class="footer__social-link" href="/" target="_blank" rel="noopener noreferrer">
-									<svg>
-										<use xlink:href="img/sprites.svg#twitter"></use>
-									</svg></a><a class="footer__social-link" href="/" target="_blank" rel="noopener noreferrer">
-									<svg>
-										<use xlink:href="img/sprites.svg#youtube"></use>
-									</svg></a></div>
+							<div class="footer__col-social">
+								<ul class="social">
+									<li class="social__item"><a class="social__link" href="/" target="_blank" rel="noopener noreferrer">
+											<svg>
+												<use xlink:href="img/sprites.svg#linkedin"></use>
+											</svg></a></li>
+									<li class="social__item"><a class="social__link" href="/" target="_blank" rel="noopener noreferrer">
+											<svg>
+												<use xlink:href="img/sprites.svg#twitter"></use>
+											</svg></a></li>
+									<li class="social__item"><a class="social__link" href="/" target="_blank" rel="noopener noreferrer">
+											<svg>
+												<use xlink:href="img/sprites.svg#youtube"></use>
+											</svg></a></li>
+								</ul>
+							</div>
 							<ul class="footer__col-links">
 								<li><a class="footer__link" href="">TERMS OF USE</a></li>
 								<li> <a class="footer__link" href="">LEGAL NOTICE</a></li>
@@ -180,7 +188,7 @@
 				</div>
 			</footer>
 		</div>
-		<script src="js/vendor.js?v=1615975437873"></script>
-		<script src="js/main.js?v=1615975437873"></script>
+		<script src="js/vendor.js?v=1616013387831"></script>
+		<script src="js/main.js?v=1616013387831"></script>
 	</body>
 </html>

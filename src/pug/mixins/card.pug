@@ -10,8 +10,7 @@ mixin card(data)
     else
         .card.card--border
             .card__inner
-                time.card__date !{data.date}
+                div.card__date !{data.date}
                 h4.card__title.card__title--up !{data.title}
                 p.card__text.card__text-box !{data.text}
-                a(href=data.link).link read more
-        
+                a(href=data.link).link Read more

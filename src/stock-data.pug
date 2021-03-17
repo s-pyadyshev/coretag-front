@@ -1,0 +1,39 @@
+extends pug/base
+
+prepend vars
+  //-
+  - title = 'Stock data'
+
+append vars
+  //-
+  - lightMenu = true
+
+block content
+  //-
+  main.main
+    include ./pug/mixins/share.pug
+
+    +b('section').section.section-center.section-top
+        .container
+            +e.inner 
+                h1 Stock data
+
+    +b('section').section.section-center.section-top
+        .container
+            +e.inner.--short
+                +share([
+                    {
+                        link: '',
+                        name: 'at'
+                    },{
+                        link: '',
+                        name: 'wifi'
+                    },{
+                        link: '',
+                        name: 'print'
+                    },{
+                        link: '',
+                        name: 'mail'
+                    }
+                ])
+            

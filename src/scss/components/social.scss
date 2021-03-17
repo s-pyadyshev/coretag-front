@@ -1,0 +1,46 @@
+.social {
+  display: flex;
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 8px;
+
+      @include tablet {
+        margin-right: 38px;
+      }
+
+      @include desktop {
+        margin-right: 16px;
+      }
+    }
+  }
+
+  &__link {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 34px;
+    padding: 2px;
+
+    .is-device-desktop &:hover,
+    .is-device-tablet &:active,
+    .is-device-mobile &:active {
+      svg {
+        fill: $color-persian-red;
+        transition-property: fill;
+        transition-duration: $transition-duration;
+      }
+    }
+
+    svg {
+      display: inline-block;
+      vertical-align: middle;
+      width: 40px;
+      height: 40px;
+      fill: $color-white;
+      transition-property: fill;
+      transition-duration: $transition-duration;
+    }
+  }
+}

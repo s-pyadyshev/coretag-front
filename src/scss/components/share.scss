@@ -1,0 +1,46 @@
+.share {
+
+    &__inner {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__link {
+        flex-shrink: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 55px;
+        width: 14vw;
+        height: 14vw;
+        max-height: 55px;
+        margin-right: 5vw;
+       
+        .is-device-desktop &:hover svg,
+        .is-device-tablet &:active svg,
+        .is-device-mobile &:active svg {
+            fill: $color-persian-red;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    svg {
+        width: 100%;
+        height: 100%;
+        fill: $color-violent-violet;
+        transition-property: fill;
+        transition-duration: $transition-duration;
+    }
+
+    @include tablet {
+
+        &__link {
+            width: 55px;
+            height: 55px;
+            margin-right: 50px;
+        }
+    }
+}

@@ -16,9 +16,9 @@ block content
         .container
             .section__inner
                 h1 OUR NEWS
-                form.form(action="") 
+                form.form(action="" method="post") 
                   .field 
-                    input.input(type="text" placeholder="Filter category")
+                    input.input(type="text" placeholder="Filter category" name="category")
                 .section__box
                   +card({
                     date: "19 februari 2021",
