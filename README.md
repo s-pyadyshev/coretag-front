@@ -1,2 +1,2 @@
-# coretag frontend
+# coretage frontend
 

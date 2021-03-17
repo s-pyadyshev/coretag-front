@@ -284,10 +284,6 @@ html(class=html.classList)&attributes(html.attrs)
       include ./favicon.pug
     block styles
       link(rel="stylesheet" href!=`${baseDir}css/main.css?v=${Date.now()}`)
-    block scripts
-      script(src!=`${baseDir}js/uikit-core.min.js`)
-      script(src!=`${baseDir}js/uikit-icons.min.js`)
-      script(src!=`${baseDir}js/uikit.min.js`)
     block head-end
   body(class=body.classList)&attributes(body.attrs)
     block body-start
