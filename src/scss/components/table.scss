@@ -24,6 +24,10 @@
     position: relative;
   }
 
+  &__col-5 {
+    text-align: center;
+  }
+
   &__col-1 {
     width: 20%;
     padding: 6px 0;
@@ -129,7 +133,13 @@
     position: relative;
     height: 4px;
     margin-right: 4px;
-    animation: grow 1.5s ease;
+    //animation: grow 1.5s ease;
+    transform: scale(.5);
+    transition: transform 2s;
+
+    &.active {
+      transform: scale(1);
+    }
 
     &:before,
     &:after {
@@ -226,13 +236,15 @@
 
   &__f-td-25 {
     width: 100px;
+    text-align: left;
   }
 
   &__f-td-75 {
-    width: calc(100%-100px);
+    width: calc(100% - 100px);
     font-weight: 300;
     font-size: 14px;
     line-height: 16px;
+    text-align: left;
     color: $color-woody-brown;
   }
 
@@ -250,6 +262,19 @@
 
     &__col-xs-hidden {
       display: flex;
+    }
+
+    .name {
+      font-size: 16px;
+    }
+  
+    .desc,
+    &__body {
+      font-size: 14px;
+    }
+
+    &__head {
+      font-size: 12px;
     }
 
     &__col-1 {
@@ -274,7 +299,7 @@
 
     &__col-7 {
       width: calc(100% / 12 * 7);
-      min-width: 604px;
+      min-width: 540px;
       border-right: 1px solid rgba(87, 69, 69, 0.45);
     }
 
@@ -324,12 +349,32 @@
       color: $color-woody-brown;
     }
 
+    .name {
+      font-size: 18px;
+    }
+  
+    .desc {
+      font-size: 16px;
+    }
+
+    &__head {
+      font-size: 14px;
+    }
+
+    &__body {
+      font-size: 16px;
+    }
+
     &__head,
     &__body,
     .name,
     .desc,
     .abbr {
       line-height: 26px;
+    }
+
+    &__col-7 {
+      min-width: 604px;
     }
 
     &__footer &__col-7 {
@@ -342,14 +387,25 @@
       margin-bottom: 0;
     }
 
-    &__f-n,
     &__f-td {
       width: 50%;
     }
 
+    &__f-n,
+    &__f-l,
     &__f-td-25,
     &__f-td-75 {
       width: auto;
+    }
+
+    &__f-n {
+      padding-top: 12px;
+      padding-bottom: 0;
+      margin-right: 60px;
+    }
+
+    &__f-l {
+      margin-right: 40px;
     }
 
     &__f-td-25 {

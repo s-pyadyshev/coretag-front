@@ -70,6 +70,7 @@
     min-width: 245px;
     text-align: center;
     position: relative;
+    padding-top: 10px;
     padding-bottom: 10px;
 
     &:not(:first-child) {
@@ -85,9 +86,13 @@
       }
     }
 
-    // &.js-has-submenu {
-    //   pointer-events: none;
-    // }
+    &.js-has-submenu {
+      pointer-events: none;
+    }
+  }
+
+  &__sublist {
+    pointer-events: auto;
   }
 
   &__link {
@@ -168,6 +173,7 @@
     &__item {
       position: relative;
       min-width: auto;
+      padding-top: 0;
       padding-bottom: 0;
 
       &:not(:first-child) {
