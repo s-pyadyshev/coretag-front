@@ -57,6 +57,7 @@
 
     &.is-expand {
       opacity: 1;
+      transition: opacity $transition-duration;
     }
   }
 
@@ -168,6 +169,10 @@
       padding: 60px 25px 20px;
       background-color: $color-violent-violet;
       display: none;
+
+      .is-expand & {
+        display: block;
+      }
     }
 
     &__item {

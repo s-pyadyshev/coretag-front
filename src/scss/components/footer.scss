@@ -48,7 +48,6 @@
     margin-left: -5px;
     display: inline-block;
     border: 1px solid transparent;
-    text-transform: uppercase;
     transition: border-color $transition-duration;
 
     .is-device-desktop &:hover,
@@ -57,6 +56,10 @@
       border-color: $color-white;
       transition: border-color $transition-duration;
     }
+  }
+
+  &__text {
+    display: none;
   }
 
   @include desktop {
@@ -90,6 +93,8 @@
 
       &-social {
         display: flex;
+        flex-direction: column;
+        align-items: center;
         margin-top: auto;
         padding-right: 48px;
       }
@@ -103,22 +108,52 @@
 
     &__copyright {
       margin-top: 0;
-      margin-left: -8px;
+      margin-left: 24px;
       padding-left: 0;
     }
 
+    &__subscribe,
+    &__text,
     &__link {
       padding: 5px;
       font-size: 19px;
       line-height: 27px;
+      color: $color-white;
+      text-transform: uppercase;
+      font-family: $second-font-family;
+    }
+
+    &__text {
+      display: block;
+      margin-bottom: 16px;
+    }
+
+    &__subscribe {
+      background-color: transparent;
+      border: 1px solid $color-white;
+      transition: background-color $transition-duration, color $transition-duration;
+
+      .is-device-desktop &:hover,
+      .is-device-tablet &:active,
+      .is-device-mobile &:active {
+        background-color: $color-white;
+        color: $color-violent-violet;
+        transition: background-color $transition-duration, color $transition-duration;
+      }
     }
   }
 
   @include desktop-xl {
     &__col {
+      &-social,
       &-hidden {
         flex-direction: row;
       }
+    }
+
+    &__text {
+      margin-right: 48px;
+      margin-bottom: 0;
     }
   }
 }

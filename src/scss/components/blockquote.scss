@@ -21,7 +21,7 @@
         line-height: 28px;
         text-align: center;
         color: $color-persian-red;
-        margin-bottom: 28px;
+        margin-bottom: 10px;
     }
 
     &__note {
@@ -46,7 +46,7 @@
 
         &:before {
             left: 0;
-            transform: translate(-74%, -42%);
+            transform: translate(-84%, -42%);
         }
 
         &__text {

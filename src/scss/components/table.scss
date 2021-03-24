@@ -5,6 +5,10 @@
     margin-bottom: 0;
   }
 
+  &__title {
+    color: $color-persian-red;
+  }
+
   &__row {
     display: flex;
     position: relative;
@@ -12,7 +16,7 @@
 
   &__head {
     font-family: "Basic Sans SemiBold";
-    font-size: 14px;
+    font-size: 9px;
     line-height: 18px;
     color: $color-midnight-blue;
   }
@@ -74,11 +78,11 @@
   }
 
   &__bd {
-    border-right: 1px dashed rgba(87, 69, 69, 0.45);
+    border-right: 1.5px dotted rgba(87, 69, 69, 0.45);
   }
 
   &__bs {
-    border-right: 1px solid rgba(87, 69, 69, 0.45);
+    border-right: .5px solid rgba(87, 69, 69, 0.3);
   }
 
   &__col-xs-hidden {
@@ -257,6 +261,27 @@
     margin-bottom: 40px;
   }
 
+  @media (min-width: 375px) {
+
+    &__head {
+      font-size: 11px;
+    }
+  }
+
+  @media (min-width: 414px) {
+
+    &__head {
+      font-size: 12px;
+    }
+  }
+
+  @include tablet {
+
+    &__head {
+      font-size: 14px;
+    }
+  }
+
   @include tablet-large {
     margin-bottom: 62px;
 
@@ -294,21 +319,22 @@
     }
 
     &__col-5 {
-      width: calc(100% / 12 * 5);
+      width: calc(100% / 11 * 5);
     }
 
     &__col-7 {
-      width: calc(100% / 12 * 7);
-      min-width: 540px;
-      border-right: 1px solid rgba(87, 69, 69, 0.45);
+      width: calc(100% / 11 * 6);
+      //min-width: 540px;
+      border-right: 1.5px dotted rgba(87, 69, 69, 0.45);
     }
 
     &__col-7 &__col-1 {
-      width: calc(100% / 7);
+      //width: calc(100% / 7);
+      width: 25%;
     }
 
     &__col-7 &__col-2 {
-      width: calc(100% / 7 * 2);
+      width: 30%;
     }
 
     &__body &__row {

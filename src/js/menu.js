@@ -1,17 +1,15 @@
 $(function () {
   $(".js-has-submenu").each(function () {
-    let $this = $(this),
-      $menuSublist = $this.children(".menu__sublist");
+    let $this = $(this);
 
     $this.on("mouseenter mouseleave", function () {
       $this.toggleClass("is-expand");
-      $menuSublist.slideToggle(150);
     });
   });
 
   $(".js-burger-menu").on("click", function () {
-    let $burgerButton = $(this),
-      $burgerMenu = $burgerButton.next();
+    let $burgerButton = $(this);
+    let $burgerMenu = $burgerButton.next();
 
     if ($burgerButton.hasClass("is-expand")) {
       $burgerButton.removeClass("is-expand");

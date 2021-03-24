@@ -10,7 +10,7 @@
     }
     
     .footer & {
-        width: 142px;
+        width: 122px;
     }
 
     @include tablet-large {
@@ -19,7 +19,7 @@
 
         .footer & {
             max-width: none;
-            width: 174px;
+            width: 158px;
         }
     }
 }
