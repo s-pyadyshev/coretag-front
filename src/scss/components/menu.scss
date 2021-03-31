@@ -62,7 +62,7 @@
   }
 
   &__list {
-    padding: 90px 40px 40px;
+    padding: 90px 30px 40px;
     display: flex;
     flex-direction: column;
   }
@@ -165,13 +165,14 @@
       left: 50%;
       transform: translateX(-50%);
       min-width: 160px;
-      border-radius: 25px;
       padding: 60px 25px 20px;
-      background-color: $color-violent-violet;
-      display: none;
+      background-color: rgba(0, 0, 0, 0.5);
+      opacity: 0;
+      transition: opacity 0.25s;
 
       .is-expand & {
-        display: block;
+        opacity: 1;
+        transition: opacity 0.25s;
       }
     }
 
@@ -226,7 +227,6 @@
 
     &__sublink {
       font-weight: 600;
-      font-size: 16px;
       line-height: 34px;
       color: $color-white;
       white-space: nowrap;
