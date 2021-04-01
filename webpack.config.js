@@ -17,18 +17,6 @@ module.exports = {
       },
     ],
   },
-  optimization: {
-    splitChunks: {
-      cacheGroups: {
-        vendor: {
-          chunks: "initial",
-          test: /node_modules|bower_components/,
-          name: "vendor",
-          enforce: true,
-        },
-      },
-    },
-  },
   devtool: "none",
   mode: "production",
 };

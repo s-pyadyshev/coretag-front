@@ -119,7 +119,6 @@
     &__map {
         background: rgb(208, 233, 253) url("../img/map.jpg") top center/contain no-repeat;
         height: 40vw;
-        // opacity: .64;
         max-height: 753px;
     }
 
@@ -344,12 +343,14 @@
                 display: block;
                 width: 100%;
                 height: 100%;
-                background-image: url(../img/header-gradient.png);
-                left: -2%;
+                left: 0%;
                 position: absolute;
                 z-index: 1;
-                top: 18%;
+                top: 0%;
+                border-radius: 50%;
                 background-size: cover;
+                background: linear-gradient(to bottom, #000000 0%,transparent 50%);
+                background-color: transparent;
             }
         }
 
@@ -394,4 +395,8 @@
 
 .section-table {
     overflow: hidden;
+}
+
+.section-last {
+    padding-bottom: 80px;
 }

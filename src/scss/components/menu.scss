@@ -87,6 +87,12 @@
       }
     }
 
+    &.is-expand {
+      > .menu__link {
+        background-color: transparent !important;
+      }
+    }
+
     &.js-has-submenu {
       pointer-events: none;
     }
@@ -203,16 +209,25 @@
       color: $color-woody-brown;
       position: relative;
       z-index: 3;
+      transition-property: background-color;
+      transition-duration: 0.25s;
 
-      &:hover {
-        color: $color-persian-red;
+      &:focus,
+      &:hover,
+      &:active {
+        color: $color-white;
+        background-color: rgba(0, 0, 0, 0.5);
+        transition-property: background-color;
+        transition-duration: 0.25s;
       }
 
       .light & {
         color: $color-white;
 
         &:hover {
-          color: $color-violent-violet;
+          background-color: rgba(0, 0, 0, 0.5);
+          transition-property: background-color;
+          transition-duration: 0.25s;
         }
       }
 
