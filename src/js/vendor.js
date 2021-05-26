@@ -4,7 +4,7 @@ import "@babel/polyfill";
 
 // svg4everybody();
 
-window.$ = $;
-window.jQuery = $;
+// window.$ = $;
+// window.jQuery = $;
 
 require("ninelines-ua-parser");

@@ -1,19 +1,16 @@
-$(function () {
-    if ($(".line").length) {
-        $(window).scroll(function () {
+jQuery(function () {
+  if (jQuery(".line").length) {
+    jQuery(window).scroll(function () {
+      let $lines = $(".line");
 
-            let $lines = $(".line");  
-    
-            $lines.each(function (i,el) {
+      $lines.each(function (i, el) {
+        let linePos = jQuery(el).offset().top,
+          scroll = jQuery(window).scrollTop() + jQuery(window).height();
 
-                let linePos = $(el).offset().top,
-                    scroll = $(window).scrollTop() + $(window).height();
-
-                if (scroll > linePos) {
-                    $(el).addClass('active');
-                }
-            });
-        });
-    }
+        if (scroll > linePos) {
+          jQuery(el).addClass("active");
+        }
+      });
+    });
+  }
 });
-  
